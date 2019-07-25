@@ -23,7 +23,7 @@ namespace SpaceX
 
             CpuEmulator.Emulate(subroutine1);
 
-            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("\n----------------------------------------------------\n");
 
             string[] systemNames =
             {
@@ -39,8 +39,20 @@ namespace SpaceX
 
             LaunchSequenceChecker.CheckSequence(systemNames, stepNumbers);
 
-            Console.WriteLine("\nPress any key to exit...");
+            Console.WriteLine("\n----------------------------------------------------\n");
+
+            int[] seq = { 1, 1, 0, 0, 0, 2, 2, 2 };
+            char[] fragmentData = { '+', '+', 'A', 'A', 'B', '#', '#', '#' };
+            int n = 3;
+
+            PacketDescrambler.Descramble(seq, fragmentData, n);
+
+            Console.WriteLine("\n----------------------------------------------------\n");
+
+            Console.WriteLine("Press any key to exit.");
             Console.ReadKey(true);
+
+
         }
     }
 }

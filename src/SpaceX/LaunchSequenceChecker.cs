@@ -33,8 +33,8 @@ namespace SpaceX
 
             result = true;
             string message = (result == true) ? "Valid launch sequence verified." : "Invalid launch sequence detected.";
-            Console.WriteLine(message);
-            Console.WriteLine("Press any key to continue.");
+            Console.WriteLine("{0}\n", message);
+            Console.Write("Press any key to continue. ");
             Console.ReadKey(true);
             return result;
         }

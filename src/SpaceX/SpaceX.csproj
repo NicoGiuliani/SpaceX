@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CpuEmulator.cs" />
     <Compile Include="LaunchSequenceChecker.cs" />
+    <Compile Include="PacketDescrambler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
