@@ -145,6 +145,8 @@ namespace SpaceX
             }
 
             Console.WriteLine("Result in R42: " + registers[42]);
+            Console.WriteLine("Press any key to continue.");
+            Console.ReadKey(true);
             return registers[42].ToString();
         }
     }

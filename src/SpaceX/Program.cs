@@ -23,8 +23,24 @@ namespace SpaceX
 
             CpuEmulator.Emulate(subroutine1);
 
+            Console.WriteLine("----------------------------------------------------");
+
+            string[] systemNames =
+            {
+                "stage_1",
+                "stage_2",
+                "dragon",
+                "stage_1",
+                "stage_2",
+                "dragon"
+            };
+
+            int[] stepNumbers = { 1, 10, 11, 2, 12, 111 };
+
+            LaunchSequenceChecker.CheckSequence(systemNames, stepNumbers);
+
             Console.WriteLine("\nPress any key to exit...");
-            Console.ReadKey();
+            Console.ReadKey(true);
         }
     }
 }
